@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../stylesheets/extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -40,11 +41,15 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../aerial_vehicles/">Aerial Vehicle Types and Categories</a>
+                </li>
+              </ul>
+              <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../education_and_tutorial/">Education and tutorials</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../aerial_vehicles/">Aerial Vehicle Types and Categories</a>
+                <li class="toctree-l1"><a class="reference internal" href="../events/">Events in Aerial Robotics</a>
                 </li>
               </ul>
               <ul>
@@ -56,7 +61,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../autopilots_suites/">Autopilot Suites</a>
+                <li class="toctree-l1"><a class="reference internal" href="../software/">Autopilot suites</a>
                 </li>
               </ul>
               <ul>
@@ -106,22 +111,25 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="middleware-and-drivers">Middleware and Drivers</h1>
-<p>The aim for this page is to provide a collection of ROS packages/related libraries which are very useful for aerial ROS projects either to serve as a reference or directly use as a part of a custom software stack. This list aims to address the gap between the flight controller firmware and purely autonomy related packages. </p>
+<p>The aim for this page is to provide a collection of ROS packages/related libraries which are very useful for aerial ROS projects either to serve as a reference or directly use as a part of a custom software stack. This list aims to address the gap between the flight controller firmware and purely autonomy related packages.</p>
 <h2 id="middleware-libraries">Middleware libraries</h2>
 <p>Enabling low overhead publish/subscribe on microcontrollers:</p>
 <ol>
 <li><a href="https://github.com/eProsima/Micro-XRCE-DDS">Micro-XRCE-DDS</a></li>
 <li><a href="https://github.com/eclipse-zenoh/zenoh-plugin-dds">Zenoh</a></li>
-<li><a href="https://github.com/eProsima/px4_to_ros">PX4-FastRTPS</a> - superceded by Micro-XRCE-DDS (https://docs.px4.io/main/en/middleware/uxrce_dds.html)</li>
+<li><a href="https://github.com/eProsima/px4_to_ros">PX4-FastRTPS</a> - superceded by <a href="https://docs.px4.io/main/en/middleware/uxrce_dds.html">Micro-XRCE-DDS</a></li>
 </ol>
 <h2 id="driver-packages-for-drone-platforms">Driver packages for drone platforms</h2>
 <p>ROS packages built atop SDKs from drone vendors to interface to their closed-source flight controller firmwares. Several of these may be for much older ROS1 distros but can have utility in terms of serving as references.</p>
 <ol>
 <li><a href="https://github.com/AutonomyLab/ardrone_autonomy">Parrot ARDrone Autonomy</a></li>
 <li><a href="https://github.com/AutonomyLab/bebop_autonomy">Parrot Bebop Autonomy</a></li>
-<li><a href="https://github.com/anqixu/tello_driver">DJI Tello driver</a></li>
+<li><a href="https://github.com/andriyukr/anafi_autonomy">Parrot ANAFI Autonomy</a></li>
+<li>DJI Tello driver <a href="https://github.com/anqixu/tello_driver">ROS1</a>, <a href="https://github.com/clydemcqueen/tello_ros">ROS2 pre-Jazzy</a>, <a href="https://github.com/arjo129/tello_ros">ROS2 Jazzy and Beyond</a></li>
 <li><a href="https://github.com/TOTON95/ros_pyparrot">Parrot Mambo driver</a></li>
 </ol>
+<p>This page was last updated: <em><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 17, 2025</span></em></p>
+<script data-goatcounter="https://aerial-robotics-landscape.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
               
             </div>
           </div><footer>
@@ -134,6 +142,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>This website is information assembled with help of the ROS Aerial Robotics Community group. Analytics with no-cookie tracking with goatviewer.com</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

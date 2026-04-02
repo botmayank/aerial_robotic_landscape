@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../stylesheets/extra.css" rel="stylesheet" />
     
       <script>
         // Current page data
@@ -40,11 +41,15 @@
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../aerial_vehicles/">Aerial Vehicle Types and Categories</a>
+                </li>
+              </ul>
+              <ul>
                 <li class="toctree-l1"><a class="reference internal" href="../education_and_tutorial/">Education and tutorials</a>
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../aerial_vehicles/">Aerial Vehicle Types and Categories</a>
+                <li class="toctree-l1"><a class="reference internal" href="../events/">Events in Aerial Robotics</a>
                 </li>
               </ul>
               <ul>
@@ -54,7 +59,9 @@
               <ul class="current">
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Hardware, Components, and Dev Kits</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#standard-commercial-platforms">Standard Commercial Platforms</a>
+    <li class="toctree-l2"><a class="reference internal" href="#standard-commercial-research-platforms">Standard Commercial Research Platforms</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#industrial-platforms">Industrial Platforms</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#inhouse-developed-platforms">Inhouse-developed platforms</a>
     </li>
@@ -70,6 +77,12 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#depth-cameras">Depth Cameras</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#monocular-cameras">Monocular Cameras</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tof-cameras">TOF Cameras</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#event-cameras">Event Cameras</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#reference-bill-of-materials">Reference Bill of Materials</a>
         <ul>
     <li class="toctree-l4"><a class="reference internal" href="#holybro-s500v2">Holybro S500v2</a>
@@ -82,7 +95,7 @@
                 </li>
               </ul>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../autopilots_suites/">Autopilot Suites</a>
+                <li class="toctree-l1"><a class="reference internal" href="../software/">Autopilot suites</a>
                 </li>
               </ul>
               <ul>
@@ -126,35 +139,60 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="hardware-components-and-dev-kits">Hardware, Components, and Dev Kits</h1>
-<blockquote>
-<p>Work In Progress
-We are still hard at work mapping the hardware landscape, if you see anything missing please send a PR, we want to encourage manufacturers to help us make this a complete list</p>
-</blockquote>
-<p>This is information compiled from the latest <a href="https://www.icra2023.org/">ICRA 2023 conference</a> held in London.
-About 75 Aerial robotics papers were found so here is a list of the standard platforms, companion computers and hardware used in the papers.
-If some of the hardware is outdated, then an alternative is shown
-This is a starting list that can be updated and extended by anyone.</p>
-<h2 id="standard-commercial-platforms">Standard Commercial Platforms</h2>
+<p>This is an list of development platforms for aerial robotics. Please start a pull request if you'd like to update these.</p>
+<h2 id="standard-commercial-research-platforms">Standard Commercial Research Platforms</h2>
 <p>These are platforms that are currently commercially available for anybody to buy for their research.</p>
+<p>Holybro:</p>
 <ul>
-<li><a href="https://holybro.com/product/x500-v2-kit">Holybro X500 - PX4 Developer Kit</a></li>
-<li><a href="https://www.bitcraze.io/products/crazyflie-2-1/">Crazyflie 2.1 - Bitcraze</a></li>
-<li><a href="https://www.uvify.com/ifo-s/">Uvify IFO-S</a> provided included as well.</li>
-<li><a href="https://voliro.com/">Tricopter voliro AG</a></li>
-<li><a href="https://www.dji.com/se/matrice100">DJI M100</a> Discontinued, look at:<ul>
-<li><a href="https://enterprise.dji.com/matrice-300">DJI M300</a></li>
+<li><a href="https://holybro.com/collections/multicopter-kit/products/px4-vision-dev-kit-v1-5">PX4 Vision Dev Kit V1.5</a></li>
 </ul>
-</li>
-<li><a href="https://store.dji.com/se/shop/tello-series">DJI tello</a></li>
-<li><a href="https://www.nxp.com/design/designs/nxp-hovergames-drone-kit-including-rddrone-fmuk66-and-peripherals:KIT-HGDRONEK66">NXP HoverGames Kit</a> official hardware for the yearly <a href="https://www.hovergames.com">HoverGames Challenge</a></li>
-<li><a href="https://get.duckietown.com/products/duckiedrone-dd21">Duckiedrone by Duckietown</a></li>
-<li><a href="https://coex.tech/clover">Clover by Coex</a></li>
-<li><a href="https://www.modalai.com/collections/drones/products/px4-autonomy-developer-kit">PX4 Autonomy Developer Kit by ModelAI</a></li>
+<p>ModalAI:</p>
+<ul>
+<li><a href="https://www.modalai.com/products/px4-autonomy-developer-kit?variant=46969885950256">PX4 Autonomy Dev Kit</a></li>
+<li><a href="https://www.modalai.com/products/starling-2?variant=48173890175280">Starling 2</a> and <a href="https://www.modalai.com/products/starling-2-max?variant=48172375310640">Starling 2 Max</a></li>
+<li><a href="https://px4.io/project/px4-autonomy-developer-kit/">PX4 Autonomy Developer Kit</a></li>
+</ul>
+<p>Duckietown:</p>
+<ul>
+<li><a href="https://get.duckietown.com/products/autonomous-raspberrypi-quadcopter-duckiedrone-dd24">Duckiedrone DD24</a></li>
+</ul>
+<p>Fly4Future:</p>
+<ul>
+<li><a href="https://fly4future.com/robofly/">Fly4Future Robofly</a></li>
+<li><a href="https://fly4future.com/custom-drones/">FLy4Future custom drone designs</a></li>
+</ul>
+<p>Bitcraze AB:</p>
+<ul>
+<li><a href="https://www.bitcraze.io/products/crazyflie-2-1-plus/">Crazyflie 2.1+</a></li>
+<li><a href="https://www.bitcraze.io/products/crazyflie-2-1-brushless/">Crazyflie 2.1 Brushless</a></li>
+</ul>
+<p>NXP Semiconductors:</p>
+<ul>
+<li><a href="https://www.nxp.com/design/designs/nxp-hovergames-drone-kit-including-rddrone-fmuk66-and-peripherals:KIT-HGDRONEK66">NXP HoverGames Kit</a></li>
+</ul>
+<p>Droneblocks:</p>
+<ul>
 <li><a href="https://droneblocks.io/program/dexi-5-px4-stem-drone-kit/">Droneblocks DEXI 5</a></li>
+</ul>
+<p>Coex:</p>
+<ul>
+<li><a href="https://clover.coex.tech/en/">Clover</a></li>
+</ul>
+<p>3DR:</p>
+<ul>
 <li><a href="https://store.3dr.com/3dr-quad-zero-kit/">3DR Quad Zero Kit</a></li>
 </ul>
+<p>Flapper Drones:</p>
+<ul>
+<li><a href="https://flapper-drones.com/wp/nimbleplus/">Flapper Nimble+</a> </li>
+</ul>
+<h2 id="industrial-platforms">Industrial Platforms</h2>
+<ul>
+<li><a href="https://voliro.com/">Tricopter voliro AG</a></li>
+<li><a href="https://enterprise.dji.com/matrice-300">DJI M300</a></li>
+</ul>
 <h2 id="inhouse-developed-platforms">Inhouse-developed platforms</h2>
-<p>These are platforms that are standard within a lab or department, with information of what it contains provided with perhaps build instructions.,</p>
+<p>These are platforms that are standard within a lab or department, with information of what it contains provided with perhaps build instructions:</p>
 <ul>
 <li><a href="https://agilicious.readthedocs.io/en/latest/index.html">Agilicous - University of Zurich</a></li>
 <li><a href="http://swarmslab.com/projects/">ModQuad - Lehigh University</a></li>
@@ -165,41 +203,54 @@ This is a starting list that can be updated and extended by anyone.</p>
 <p>Many of the UAVs are usually built by hand and composed of different components. This usually consists of a drone frame, flight controller boards, companion computers and of course motors, batteries and ESCs.</p>
 <h3 id="drone-frames">Drone Frames</h3>
 <p>Many drone frames are usually built from carbon fiber and custom-made for application or research.
-There are some frames that are provided that will provide some base:
-- <a href="https://www-v1.dji.com/flame-wheel-arf/feature.html">DJI Flame wheel ARF kit F550, F450, F330</a>
-- <a href="https://momentumdrones.com/products/dev7-frame-kit">Momentum Drones DEV-7</a></p>
-<h3 id="flight-controllers">Flight controllers</h3>
+There are some frames that are provided that will provide some base:</p>
 <ul>
-<li><a href="https://docs.px4.io/main/en/flight_controller/pixhawk4.html">Pixhawk 4</a> discontinued, go look at:</li>
-<li><a href="https://holybro.com/collections/autopilot-flight-controllers/products/pixhawk-6c">Holybro's Pixhawk 6C</a></li>
-<li><a href="https://doc.cuav.net/flight-controller/pixhawk-v6x/en/#building-firmware">CUAV's Pixhawk V6x</a></li>
-<li><a href="https://store.mrobotics.io/product-p/auav-pxrcr-r15-mr.htm">mRo PixRacer R15</a> discontinued, go look at:</li>
-<li>
-<p><a href="https://store.3dr.com/pixracer-pro/">mRo PixRacerPro</a></p>
-</li>
-<li>
-<p><a href="https://www.bitcraze.io/products/crazyflie-bolt-1-1/">Crazyflie Bolt 1.1</a></p>
-</li>
+<li><a href="https://www-v1.dji.com/flame-wheel-arf/feature.html">DJI Flame wheel ARF kit F550, F450, F330</a></li>
+</ul>
+<h3 id="flight-controllers">Flight controllers</h3>
+<p>Holybro:</p>
+<ul>
+<li><a href="https://docs.px4.io/main/en/flight_controller/pixhawk4.html">Pixhawk 4</a> </li>
+<li><a href="https://holybro.com/collections/autopilot-flight-controllers/products/pixhawk-6c">Holybro Pixhawk 6C</a></li>
+<li><a href="https://holybro.com/products/pixhawk-6x">Holybro Pixhawk 6X</a></li>
+<li><a href="https://holybro.com/collections/autopilot-flight-controllers/products/pixhawk-6x-pro">Holybro Pixhawk 6X PRO</a></li>
+</ul>
+<p>mRobotics/3DR:</p>
+<ul>
+<li><a href="https://store.3dr.com/pixracer-pro/">mRo PixRacerPro</a></li>
+<li><a href="https://store.3dr.com/control-zero-classic/">3DR Control Zero Classic</a></li>
 <li><a href="https://store.3dr.com/control-zero-h7-oem/">3DR Control Zero H7 OEM</a></li>
 <li><a href="https://store.3dr.com/reference-design-carrier-board/">3DR Reference Design Carrier Board</a></li>
 <li><a href="https://store.3dr.com/stick-adapter-carrier-board/">3DR "Stick" Adapter (Carrier Board)</a></li>
+</ul>
+<p>Bitcraze:</p>
+<ul>
+<li><a href="https://www.bitcraze.io/products/crazyflie-bolt-1-1/">Crazyflie Bolt 1.1</a></li>
+</ul>
+<p>ARK Electronics</p>
+<ul>
 <li><a href="https://arkelectron.com/product/arkv6x">ARK Electronics ARKV6X</a></li>
-<li><a href="https://arkelectron.com/product/ark-pixhawk-autopilot-bus-carrier">ARK Electronics Pixhawk Autopilot Bus Carrier</a></li>
-<li><a href="https://store.3dr.com/control-zero-classic/">3DR Control Zero Classic</a></li>
+<li><a href="https://arkelectron.com/product/ark-pi6x-flow/">ARK Electronics Pi6X Flow</a></li>
 </ul>
 <h3 id="companion-computers">Companion Computers</h3>
 <p>For the drones that can carry it, the companion computers are important since they can do additional computations that the flight controller can not easily do.
-As these are capable of running some form of Linux, these can handle for instance  computer vision with <a href="https://opencv.org/">OpenCV</a> or run nodes with <a href="https://www.ros.org/">ROS</a></p>
+As these are capable of running some form of Linux, these can handle for instance  computer vision with <a href="https://opencv.org/">OpenCV</a> or run nodes with <a href="https://www.ros.org/">ROS</a>. 
+Some companion computers also integrate flight control (RTOS) hardware in the same package</p>
 <ul>
 <li><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-xavier-nx/">Nvidia Jetson Xavier</a> or the <a href="https://developer.nvidia.com/embedded/jetson-tx2">TX2 Module</a></li>
-<li><a href="https://www.intel.com/content/www/us/en/products/details/nuc/boards/products.html">Intel Nuc Boards</a></li>
-<li><a href="https://www.raspberrypi.com/products/raspberry-pi-3-model-a-plus/">Raspberry PI 3 (A+)</a> or <a href="https://www.raspberrypi.com/products/raspberry-pi-4-model-b/">Raspberry Pi 4</a></li>
+<li><a href="https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/jetson-orin/">Nvidia Jetson Orin</a></li>
+<li><a href="https://www.asus.com/se/displays-desktops/nucs/nuc-mini-pcs/asus-nuc-14-pro/">ASUS NUC Boards</a></li>
+<li><a href="https://www.raspberrypi.com/products/raspberry-pi-5/">Raspberry PI  (A+)</a></li>
 <li><a href="https://www.khadas.com/vim3">Khadas Vim3</a></li>
 <li><a href="https://www.hardkernel.com/product-category/odroid-board/">Odroid (various boards)</a></li>
 <li><a href="https://www.nxp.com/design/designs/navqplus-ai-ml-companion-computer-evk-for-mobile-robotics-ros-ground-stations-and-camera-heads:8MPNAVQ">NXP NAVQPlus</a></li>
-<li><a href="https://developer.qualcomm.com/qualcomm-robotics-rb5-kit">Qualcomm RB5</a></li>
-<li><a href="https://www.mistralsolutions.com/product/mrd5165-eagle-kit/">MRD5165 Eagle Kit</a> (coming soon)</li>
+<li><a href="https://www.qualcomm.com/developer/hardware/robotics-rb5-development-kit">Qualcomm RB5</a></li>
+<li><a href="https://www.mistralsolutions.com/product/mrd5165-eagle-kit/">MRD5165 Eagle Kit</a></li>
 <li><a href="https://www.modalai.com/collections/blue-uas-framework-components/products/voxl-2">VOXL 2 by Model AI</a></li>
+<li><a href="https://echomav.com/product/echopilot-ai/">EchoPilot AI</a></li>
+<li><a href="https://www.amd.com/en/products/system-on-modules/kria.html">AMD Xilinx Kria Starter Kits</a></li>
+<li><a href="https://www.lattepanda.com/">LattePanda x86 boards</a></li>
+<li></li>
 </ul>
 <h3 id="carrier-boards">Carrier boards</h3>
 <p>Several vendors have developed carrier boards that can expose input/output ports of companion computers mentioned above which are packaged in a System-on-Module (SoM) form factor and also offer a standard interface for plugging in popular flight controllers/their own FCs.</p>
@@ -207,16 +258,31 @@ As these are capable of running some form of Linux, these can handle for instanc
 <li><a href="https://www.mistralsolutions.com/mrd5165-eagle-kit/">Mistral MRD5165 Eagle based on Qualcomm RB5</a></li>
 <li><a href="https://arkelectron.com/product/ark-jetson-pab-carrier/">ARK Electronics Jetson PAB carrier</a></li>
 <li><a href="https://arkelectron.com/product/ark-pi6x-flow">ARK Electronics Pi6X Flow</a></li>
+<li><a href="https://holybro.com/products/pixhawk-jetson-baseboard?variant=43818665148605">Holybro Jetson Baseboard</a></li>
 <li><a href="https://dronee.aero/pages/lychee">Dronee Lychee Drone autopilot hardware</a></li>
-<li><a href="https://airvolute.com/dronecore-2/">Airvolute DroneCore2 Jetson + Cube</a></li>
+<li><a href="https://airvolute.com/shop-prod/uav-autopilots/dcs-2-default/">Airvolute DroneCore2 Jetson + Cube</a></li>
 </ul>
 <h3 id="depth-cameras">Depth Cameras</h3>
 <ul>
-<li><a href="https://www.intel.com/content/www/us/en/products/sku/192742/intel-realsense-tracking-camera-t265/specifications.html">Intel RealSense T265 </a> Discontinued, look at:</li>
-<li><a href="https://www.intelrealsense.com/depth-camera-d455/">RealSense D455</a></li>
-<li><a href="https://www.intelrealsense.com/depth-camera-d435i/">RealSense D435i</a></li>
+<li><a href="https://www.realsenseai.com/products/real-sense-depth-camera-d455f/">RealSense D455</a></li>
+<li><a href="https://www.intel.com/content/www/us/en/products/sku/190004/intel-realsense-depth-camera-d435i/specifications.html">RealSense D435i</a></li>
 <li>Oak-d Series like <a href="https://docs.luxonis.com/projects/hardware/en/latest/pages/DM9098pro/">OAK-D Pro</a> or <a href="https://docs.luxonis.com/projects/hardware/en/latest/pages/DM9095/">OAK-D-Lite</a></li>
-<li><a href="https://www.modalai.com/collections/blue-uas-framework-components/products/voxl-cam?variant=39543794565171">VOXL CAM by ModelAI</a></li>
+<li><a href="https://docs.modalai.com/voxl-cam/">VOXL CAM by ModelAI</a></li>
+</ul>
+<h3 id="monocular-cameras">Monocular Cameras</h3>
+<ul>
+<li><a href="https://www.raspberrypi.com/documentation/accessories/camera.html">Raspberry PI Cameras</a> Compatible with RPI. IMX219 and IMX477 based cameras compatible with Jetson Xavier, NX, Nano, Orin series (other models may require device tree overlays or source changes).</li>
+<li><a href="https://coral.ai/products/camera">Google Coral Camera</a> Compatible with NXP NAVQPLUS</li>
+</ul>
+<h3 id="tof-cameras">TOF Cameras</h3>
+<ul>
+<li><a href="https://www.emcraft.com/products/1111">Liteon A65 Camera Starter Kit</a> Check with vendor for NXP NAVQPLUS compatibility.</li>
+<li><a href="https://www.emcraft.com/products/1178">PMD Flexx2 3D Camera</a> USB version should be compatible with most companion computers.</li>
+<li><a href="https://www.modalai.com/products/m0178?variant=48528287793456">VOXL2 TOF Depth Sensor </a> Compatible with VOXL2. Check with vendor for early access product.</li>
+</ul>
+<h3 id="event-cameras">Event Cameras</h3>
+<ul>
+<li><a href="https://openmv.io/collections/cameras/products/openmv-n6?variant=41573456576606">OpenMV N6</a></li>
 </ul>
 <h3 id="reference-bill-of-materials">Reference Bill of Materials</h3>
 <h4 id="holybro-s500v2">Holybro S500v2</h4>
@@ -342,18 +408,21 @@ As these are capable of running some form of Linux, these can handle for instanc
 **Used for connecting to ground control station, 915MHz variant also available</p>
 <p><strong>Useful tool for this page</strong>:
 <a href="https://tabletomarkdown.com/convert-spreadsheet-to-markdown/">https://tabletomarkdown.com/convert-spreadsheet-to-markdown/</a></p>
+<p>This page was last updated: <em><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2026</span></em></p>
+<script data-goatcounter="https://aerial-robotics-landscape.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../simulation/" class="btn btn-neutral float-left" title="Simulation of Aerial Robotics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../autopilots_suites/" class="btn btn-neutral float-right" title="Autopilot Suites">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../software/" class="btn btn-neutral float-right" title="Autopilot suites">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
+      <p>This website is information assembled with help of the ROS Aerial Robotics Community group. Analytics with no-cookie tracking with goatviewer.com</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
@@ -377,7 +446,7 @@ As these are capable of running some form of Linux, these can handle for instanc
       <span><a href="../simulation/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../autopilots_suites/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../software/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
